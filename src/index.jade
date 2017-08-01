@@ -3,22 +3,22 @@ html
     head
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Triangle
-        link(rel="stylesheet", href="css/style.css")
+        title Triangle/Portfolio
+        link(rel="stylesheet", href="../src/css/style.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     body
         header
-             div.container
-                 div.row
-                    div.two-thirds.column
-                        img(src="")
+             .container
+                 .row
+                    .two-thirds.column
                         img
                         img
                         img
                         img
-                 div.row
-                    div.twelve.columns
+                        img
+                 .row
+                    .twelve.columns
                         nav
                          ul
                             li
@@ -38,6 +38,52 @@ html
                                 a SHORTCODES
                             li
                                 a SEARCH
+                 .row
+                    .twelve.columns
+                        h1 Portfolio
+                        p Be creative
+                 .row
+                    .offset-by-two.eight.columns
+                        ul
+                            li
+                                a All
+                            li
+                                a Branded
+                            li
+                                a Design
+                            li
+                                a Folio
+                            li
+                                a Logos
+                            li
+                                a Mobile
+                            li
+                                a Mockup
 
+                    mixin square(imagen, texto)
+                        .three.columns
+                            img.u-max-full-width(src="images/portfolio/#{imagen}.jpg")
+                            p #{texto}
+                    .row
+                        +square(1, "Sailing vivamus")
+                        +square(2, "Sailing vivamus")
+                        +square(3, "Sailing vivamus")
+                        +square(4, "Sailing vivamus")
+                    .row
+                        +square(5, "Sailing vivamus")
+                        +square(6, "Sailing vivamus")
+                        +square(7, "Sailing vivamus")
+                        +square(8, "Sailing vivamus")
+                    .row
+                        +square(9, "Sailing vivamus")
+                        +square(10, "Sailing vivamus")
+                        +square(11, "Sailing vivamus")
+                        +square(12, "Sailing vivamus")
+                    .row
+                        +square(13, "Sailing vivamus")
+                        +square(14, "Sailing vivamus")
+                        +square(15, "Sailing vivamus")
+                        +square(16, "Sailing vivamus")
 
+<!--COMPILAR EL HANDLEBAR SI NO NO CORRE CON PUG-->
 

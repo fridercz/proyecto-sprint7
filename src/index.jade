@@ -4,86 +4,88 @@ html
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Triangle/Portfolio
+        link(rel="icon" href="images/ico/apple-touch-icon-57-precomposed.png" type="image/x-icon")
         link(rel="stylesheet", href="../src/css/style.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet")
     body
         header
              .container
                  .row
-                    .two-thirds.column
-                        img
-                        img
-                        img
-                        img
-                        img
+                    .offset-by-eight.four.columns
+                        i.fa.fa-facebook.fa-lg(aria-hidden="true")
+                        i.fa.fa-twitter.fa-lg(aria-hidden="true")
+                        i.fa.fa-google-plus.fa-lg(aria-hidden="true")
+                        i.fa.fa-dribbble.fa-lg(aria-hidden="true")
+                        i.fa.fa-linkedin.fa-lg(aria-hidden="true")
                  .row
                     .twelve.columns
-                        nav
-                         ul
-                            li
-                                img
-                            li
-                                h1 Triangle
-                         ul
-                            li
-                                a HOME
-                            li
-                                a PAGES
-                            li
-                                a BLOG
-                            li
-                                a PORTFOLIO
-                            li
-                                a SHORTCODES
-                            li
-                                a SEARCH
-                 .row
-                    .twelve.columns
-                        h1 Portfolio
-                        p Be creative
-                 .row
-                    .offset-by-two.eight.columns
-                        ul
-                            li
-                                a All
-                            li
-                                a Branded
-                            li
-                                a Design
-                            li
-                                a Folio
-                            li
-                                a Logos
-                            li
-                                a Mobile
-                            li
-                                a Mockup
+                        nav.small-font
+                             ul
+                                li.right-brand
+                                    img.vertical(src="images/logo.png")
+                                li
+                                    li
+                                        a HOME
+                                    li
+                                        a PAGES
+                                    li
+                                        a BLOG
+                                    li
+                                        a PORTFOLIO
+                                    li
+                                        a SHORTCODES
+                                    li
+                                        a SEARCH
+         .row
+            .twelve.columns.portfolioBar
+                .container
+                    h1.margin-less Portfolio
+                    p Be creative
+        .container
+         .row
+            .offset-by-two.eight.columns
+                ul.downBar
+                    li
+                        a All
+                    li
+                        a Branded
+                    li
+                        a Design
+                    li
+                        a Folio
+                    li
+                        a Logos
+                    li
+                        a Mobile
+                    li
+                        a Mockup
 
-                    mixin square(imagen, texto)
-                        .three.columns
-                            img.u-max-full-width(src="images/portfolio/#{imagen}.jpg")
-                            p #{texto}
-                    .row
-                        +square(1, "Sailing vivamus")
-                        +square(2, "Sailing vivamus")
-                        +square(3, "Sailing vivamus")
-                        +square(4, "Sailing vivamus")
-                    .row
-                        +square(5, "Sailing vivamus")
-                        +square(6, "Sailing vivamus")
-                        +square(7, "Sailing vivamus")
-                        +square(8, "Sailing vivamus")
-                    .row
-                        +square(9, "Sailing vivamus")
-                        +square(10, "Sailing vivamus")
-                        +square(11, "Sailing vivamus")
-                        +square(12, "Sailing vivamus")
-                    .row
-                        +square(13, "Sailing vivamus")
-                        +square(14, "Sailing vivamus")
-                        +square(15, "Sailing vivamus")
-                        +square(16, "Sailing vivamus")
+            mixin square(imagen, texto)
+                .three.columns
+                    img.u-max-full-width(src="images/portfolio/#{imagen}.jpg")
+                    p #{texto}
+            .row
+                +square(1, "Sailing vivamus")
+                +square(2, "Sailing vivamus")
+                +square(3, "Sailing vivamus")
+                +square(4, "Sailing vivamus")
+            .row
+                +square(5, "Sailing vivamus")
+                +square(6, "Sailing vivamus")
+                +square(7, "Sailing vivamus")
+                +square(8, "Sailing vivamus")
+            .row
+                +square(9, "Sailing vivamus")
+                +square(10, "Sailing vivamus")
+                +square(11, "Sailing vivamus")
+                +square(12, "Sailing vivamus")
+            .row
+                +square(13, "Sailing vivamus")
+                +square(14, "Sailing vivamus")
+                +square(15, "Sailing vivamus")
+                +square(16, "Sailing vivamus")
 
 <!--COMPILAR EL HANDLEBAR SI NO NO CORRE CON PUG-->
 

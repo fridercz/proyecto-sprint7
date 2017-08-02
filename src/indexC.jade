@@ -13,7 +13,7 @@ html
         header
              .container
                  .row
-                    .offset-by-eight.four.columns
+                    .offset-by-nine.three.columns
                         i.fa.fa-facebook.fa-lg(aria-hidden="true")
                         i.fa.fa-twitter.fa-lg(aria-hidden="true")
                         i.fa.fa-google-plus.fa-lg(aria-hidden="true")
@@ -37,7 +37,8 @@ html
                                     li
                                         a SHORTCODES
                                     li
-                                        a SEARCH
+                                        a
+                                            i.fa.fa-search.fa-lg(aria-hidden="true")
          .row
             .twelve.columns.portfolioBar
                 .container
@@ -87,5 +88,8 @@ html
                 +square(15, "Sailing vivamus")
                 +square(16, "Sailing vivamus")
 
-<!--COMPILAR EL HANDLEBAR SI NO NO CORRE CON PUG-->
+        script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")
+        script(type="text/javascript" src="../src/js/app.js")
+
+
 

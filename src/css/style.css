@@ -1,5 +1,13 @@
-h1 {
+* {
 	font-family: 'Lato', sans-serif;
+}
+
+.fa-search{
+	color: #77AAFF;
+}
+
+h1 {
+
 }
 
 .downBar li a {
@@ -7,15 +15,20 @@ h1 {
 	cursor: pointer;
 }
 
+.heighline{
+	line-height: normal;
+}
+
 i {
 	color: #C8C8C8;
-	padding-left: 2vh;
+	padding-left: 2.75vh;
 }
 
 li {
 	display: inline-block;
 	padding: 0 20px 0 0;
 	list-style: none;
+	cursor: pointer;
 }
 
 .margin-less{

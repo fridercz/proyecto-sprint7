@@ -2,6 +2,10 @@
 	font-family: 'Lato', sans-serif;
 }
 
+.back {
+	position: absolute;
+}
+
 .fa-search{
 	color: #77AAFF;
 }
@@ -54,6 +58,10 @@ nav{
 	font-size: 12px;
 }
 
+#top{
+	padding-top: 10vh;
+}
+
 .u-max-full-width {
   max-width: 100%;
   box-sizing: border-box; }
@@ -61,3 +69,8 @@ nav{
 .vertical {
 	vertical-align: middle;
 }
+
+.wallpaper {
+	background-image: url("../../dist/images/home/slider-bg.png");
+}
+

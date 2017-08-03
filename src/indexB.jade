@@ -1,44 +1,5 @@
-doctype html
-html
-    head
-        meta(charset="utf-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Triangle/Blog
-        link(rel="icon" href="images/ico/apple-touch-icon-57-precomposed.png" type="image/x-icon")
-        link(rel="stylesheet", href="../src/css/style.css")
-        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css")
-        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
-        link(href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet")
-    body
-        header
-             .container
-                 .row
-                    .offset-by-nine.three.columns
-                        i.fa.fa-facebook.fa-lg(aria-hidden="true")
-                        i.fa.fa-twitter.fa-lg(aria-hidden="true")
-                        i.fa.fa-google-plus.fa-lg(aria-hidden="true")
-                        i.fa.fa-dribbble.fa-lg(aria-hidden="true")
-                        i.fa.fa-linkedin.fa-lg(aria-hidden="true")
-                 .row
-                    .twelve.columns
-                        nav.small-font
-                             ul
-                                li.right-brand
-                                    img.vertical(src="images/logo.png")
-                                li
-                                    li
-                                        a(href="indexHome.html") HOME
-                                    li
-                                        a(href="indexB.html") PAGES
-                                    li
-                                        a(href="indexA.html") BLOG
-                                    li
-                                        a(href="indexC.html") PORTFOLIO
-                                    li
-                                        a(href="indexD.html") SHORTCODES
-                                    li
-                                        a
-                                            i.fa.fa-search.fa-lg(aria-hidden="true")
+extend layout
+block append foot
     .row
         .twelve.columns.portfolioBar
             .container
@@ -54,32 +15,36 @@ html
                         p When an unknown printer took a gallery of type and scrambled it to make a type specimen book. It has survived not only fuve centuries.
 
                  mixin tiny-square(imagen, título, texto)
-                    .four.columns
-                        img.u-max-full-width(src="images/home/#{imagen}.png")
-                        h5 #{título}
-                        p #{texto}
+                     .four.columns
+                         img.u-max-full-width(src="images/home/#{imagen}.png")
+                         h5 #{título}
+                         p #{texto}
                 .row
-                        +tiny-square("icon1", "Incredibly Responsive", "Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round")
-                        +tiny-square("icon2", "Superior Typography", "Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison")
-                        +tiny-square("icon3", "Swift Page Builder", "Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.")
+                    +tiny-square("icon1", "Incredibly Responsive", "Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round")
+                    +tiny-square("icon2", "Superior Typography", "Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison")
+                    +tiny-square("icon3", "Swift Page Builder", "Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.")
             .row
                 .twelve.columns.portfolioBar
                     .container
                         .row
-                            h1.margin-less Triangle Corporate Template
-                            p A responsive, retina-ready and wide multipurpose template.
-                        .row
+                            .twelve.columns
+                                .six.columns.margin-less
+                                    h5 Triangle Corporate Template
+                                    p A responsive, retina-ready and wide multipurpose template.
+                                button.two.columns TAKE A TOUR
+                                img.four.columns(src="images/home/tour-icon2.png")
+
              .row
                 .offset-by-four.four.columns.center
                     h3 Meet the team
                     p Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-             mixin square-about(imagen, nombre, rol)
+                mixin square-about(imagen, nombre, rol)
                     .three.columns
                         img.u-max-full-width(src="images/aboutus/#{imagen}.jpg")
                         h5 #{nombre}
                         p #{rol}
-                .row
-                    +square-about(4,"John Doe", "Ceo Developer")
-                    +square-about(3,"John Doe", "Ceo Developer")
-                    +square-about(2,"John Doe", "Ceo Developer")
-                    +square-about(1,"John Doe", "Ceo Developer")
+            .row
+                +square-about(4,"John Doe", "Ceo Developer")
+                +square-about(3,"John Doe", "Ceo Developer")
+                +square-about(2,"John Doe", "Ceo Developer")
+                +square-about(1,"John Doe", "Ceo Developer")
